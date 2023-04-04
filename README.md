@@ -6,19 +6,22 @@
 ## 安装
 npm install longhash-cuimc
 
-## 使用范例
+## 使用
 
 ### common.js
 cjs:
-const longhash = require('longhash-cuimc')
+`const longhash = require('longhash-cuimc')`
 
 ### esModule
 esm:
-import longhash from 'longhash-cuimc'
+`import longhash from 'longhash-cuimc'`
 
+### 使用方法
+```js
 const content = 'test'
 
 const encodeText = longhash.encode('longhash', content)
 
 const decodeText = longhash.decode('longhash', encodeText)
+```
 
